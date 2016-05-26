@@ -1,0 +1,53 @@
+create table cliente(
+id SERIAL primary key NOT NULL,
+nome varchar(255) not null,
+idade int not null
+)
+
+
+create table carro(
+idCarro SERIAL primary key not null,
+nomeCarro varchar(255) not null
+)
+
+create table compra(
+idCompra SERIAL primary key not null,
+id int not null references cliente(id),
+idCarro int not null references carro(idCarro)
+)
+
+insert into cliente (nome, idade) values ('luis', 28)
+insert into cliente (nome, idade) values ('maria', 22)
+
+insert into carro (nomeCarro) values ('Fiat Uno')
+insert into carro (nomeCarro) values ('Gol')
+insert into carro (nomeCarro) values ('')
+
+insert into compra (id, idCarro) values (1,1)
+
+insert into produto (nomeProd, idCli) values ('Carro', 1)
+
+update cliente set nome='joao', idade='20' where nome='maria'
+
+delete from compra where idCompra=7
+
+drop table produto
+
+select * from carro
+
+select * from cliente where nome='luis' and idade=28
+
+select * from compra
+
+select id from cliente where nome='joao'
+
+select compra.idCompra, cliente.nome, carro.nomeCarro from compra
+inner join cliente
+on cliente.id = compra.id
+inner join carro
+on carro.idCarro = compra.idCarro
+order by compra.idCompra asc
+
+select produto.idProd, produto.nomeProd, cliente.nome from produto
+inner join cliente
+on produto.idProd = cliente.id

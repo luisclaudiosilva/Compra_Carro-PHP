@@ -1,0 +1,78 @@
+html,
+body {
+	height: 100%;
+}
+
+.geral {
+	min-height: 100%;
+	position: relative;
+}
+
+h1 {
+	font-size: 40px;
+	color: #6a5ed6;
+	text-align: center;
+}
+
+.cli {
+	background-color: #F5F5F5;
+	height: 400px;
+	margin-top: -27px;
+	margin-right: 50px;
+	margin-left: 100px;
+	text-align: center;
+	width: 85%;
+	padding-top: 90px;
+	padding-bottom: 60px;
+	box-shadow: 0px 0px 10px black;
+}
+
+.rod {
+	text-align: center;
+	background-color: #F5F5F5;
+	height: 100px;
+	margin-top: 30px;
+	margin-left: 100px;
+	margin-right: 50px;
+	padding-top: 40px;
+	position: absolute;
+	width: 85%;
+	box-shadow: 0px 0px 10px black;
+
+}
+
+#idade {
+	width: 40px;
+}
+
+li {
+	width: 50px;
+}
+ 
+ul {
+	width: 100px;
+	margin-left: 45%;
+	
+}
+
+#tabela {
+	font-size: 20px;
+	background-color: #BEBEBE;
+	width: 400px;
+	text-align: center;
+
+}
+
+#panel {
+	overflow: auto;
+	margin-right: 33%;
+	margin-left: 30%;
+	height: 250px;
+}
+
+#linha1 {
+	font-weight: bold;
+	font-size: 22px;
+}
+
+
